@@ -45,7 +45,7 @@ Route.group(() => {
 	Route.post('account/edit', 'ProfileController.update').as('profile.update')
 
 	Route.resource('vertos', 'VertosController')
-}).middleware(['auth', 'verifiedEmail'])
+}).middleware(['auth']) // add 'verifiedEmail' to this array of middleware
 
 Route.get('/:username', 'ProfileController.profile')
 

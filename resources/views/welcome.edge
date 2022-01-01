@@ -15,12 +15,11 @@
           <section aria-labelledby="quick-links-title">
             <div class="rounded-lg space-y-4">
               @each(verto in vertos)
+                
                 @!component('components/verto/card.edge', { verto })
               @else
                 No vertos
               @endeach
-
-
             </div>
           </section>
         </div>

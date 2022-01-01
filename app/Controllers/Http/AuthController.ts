@@ -27,9 +27,9 @@ export default class AuthController {
     user.email = validatedUser.email
     user.password = validatedUser.password
     user.save()
-    user.sendVerificationEmail()
+    // user.sendVerificationEmail()
 
-    return response.redirect('verify-email')
+    return response.redirect('dashboard')
   }
 
   public async login({ auth, request, response }: HttpContextContract) {
